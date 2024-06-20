@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    font-family: sans-serif;
+    background-image: url(fondo-calendario-edit.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contenedor-tareas {
+    width: 1550px;
+    height: 600px;
+    background: rgb(245,4,233);
+    background: linear-gradient(200deg, rgba(245,4,233,0.1) 11%, rgba(3,22,246,0.1) 80%); 
+    margin: 30px auto;
+    border: 0px solid #f10808;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    position: absolute;
+    top:10% ;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #c300ff9d;
+    border-radius: 10px;
+    width: 700px;
+    height: 60px;  
+}
+
+
+input[type="text"] {
+    width: 30%;
+    padding: 10px ;
+}
+
+label{
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.labeldescrip{
+    margin-left: 5px;
+    padding-bottom: 5px;
+   
+}
+
+#btnTareaNueva {
+    height: 60px;
+    width: 150px;
+    background-color: #0044ffee;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(249, 251, 252, 0.747) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    position: absolute;
+    top:9.9% ;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+
+}
+
+#descripcionTarea {
+    width: 270px;
+    background-color: #ffffffd2;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    margin-bottom: -10px;
+    resize:none;
+    
+}
+
+#nombreTarea {
+    width: 220px;
+    background-color:  #ffffffd2;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 30px;
+
+
+}
+
+#btnCerrar{
+    padding: 10px 15px;
+    background-color: #0044ffee;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+    
+}
+
+#btnAnadir{
+    background-color: #0044ffee;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+
+#btnGuardar{
+    height: 25px;
+    width: 60px;
+    background-color: #0044ffee;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#lista-tareas {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-tareas li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#lista-tareas li.completada {
+    text-decoration: line-through;
+}
+
+#formulario {
+    margin-top: 140px;
+    margin-left: 610px;
+    padding-bottom:10px;
+    padding: 20px;
+    border: 0px solid #ccc;
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 .2rem #ffffffdc,
+              0 0.2rem 1rem #ea13fe93,
+              0 0 0.5rem #132bfe93;
+    background-color: rgba(0, 0, 0, 0.651);
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.labelForm{
+    height: 100%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#formulario2 {
+
+    margin-top: 105px;
+    padding: 10px;
+    border-radius: 1px solid #ccc;
+    width: 300px;
+}
+
+.oculto {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}

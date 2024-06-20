@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Tareas</title>
+    <link rel="stylesheet" href="org-tareas.css">
+
+</head>
+<body>
+
+    <h1>Organizador de tareas</h1>
+
+    <button id="btnTareaNueva">Tarea nueva</button>
+
+    <div id="formulario" class="oculto">
+   
+        <form class="form1">
+
+            <div class="labelForm">
+                <label for="nombreTarea">Nombre de la tarea:</label>
+                <input type="text" id="nombreTarea" name="nombreTarea" required>
+            </div>
+            
+            <div class="labelForm">
+                <label class= "labeldescrip" for="descripcionTarea">Descripción:</label>
+                <textarea id="descripcionTarea" name="descripcionTarea" rows="4" cols="50"></textarea>
+            </div>
+
+            <div>
+                <button type="submit" id="btnAnadir">Añadir</button>
+                <button type="button" id="btnCerrar">Cerrar</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="contenedor-tareas">
+        <ul id="listaTareas">
+            <!-- Aquí se mostrarán las tareas -->
+        </ul>
+    </div>
+
+    
+
+    <script src="org-tareas.js"></script>
+    
+</body>
+</html>
